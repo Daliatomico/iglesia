@@ -69,32 +69,27 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand temple-brand" href="#" aria-label="Templo Gloria Revelada - Inicio">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0L3 4v2H1v8h14V6h-2V4L8 0zM6 6V5h4v1h3v6H3V6h3z" />
-                    <path d="M7 10h2v2H7v-2z" />
-                </svg>
+            <a class="navbar-brand temple-brand" href="#home" aria-label="Templo Gloria Revelada - Inicio">
                 Templo Evangélico Gloria Revelada
             </a>
-
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Inicio</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ministerios">Ministerios</a>
+                        <a class="nav-link" href="#principios">Principios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eventos">Eventos</a>
+                        <a class="nav-link" href="#pastor">Pastores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
@@ -107,7 +102,7 @@
     <!-- Main Content -->
     <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">Encuentra fe, esperanza y amor</h1>
@@ -119,14 +114,14 @@
                         <p class="bible-verse-ref">Mateo 18:20</p>
                     </div>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="#contacto" class="btn btn-primary btn-lg">Visítanos</a>
-                        <a href="#ministerios" class="btn btn-outline-light btn-lg">Nuestros Ministerios</a>
+                        <!-- <a href="#contacto" class="btn btn-primary btn-lg">Visítanos</a> -->
+                        <a href="#contacto" class="btn btn-outline-light btn-lg">Visitanos</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- sobre nosotros Section -->
         <section id="nosotros" class="section">
             <div class="container">
                 <div class="row align-items-center">
@@ -143,21 +138,26 @@
                         <p>Nuestra misión es predicar el evangelio de Jesucristo con claridad y pasión, discipular a los
                             creyentes para que crezcan en su relación con Dios, y servir a nuestra comunidad con amor
                             compasivo y acciones concretas.</p>
-                        <div class="mt-4">
+                        <!-- <div class="mt-4">
                             <a href="#" class="btn btn-primary me-2 mb-2">Conoce nuestra historia</a>
                             <a href="#" class="btn btn-outline-primary">Creemos</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Values Section -->
-                <div class="row mt-5 pt-5">
+        <!-- valores Section -->
+        <section id="principios" class="section bg-light">
+            <div class="container">
+                <div class="mt-5 pt-5">
                     <div class="col-12 text-center mb-5">
-                        <h2 class="section-title center">Nuestros Valores</h2>
-                        <p class="section-subtitle mx-auto">Principios fundamentales que guían nuestro ministerio</p>
+                        <h2 class="section-title center">Nuestros principios</h2>
+                        <p class="section-subtitle mx-auto">Principios fundamentales que guía nuestro ministerio</p>
                     </div>
-
-                    <div class="col-md-4 mb-4">
+                </div>
+                <div class="row"> <!-- fila para las columnas -->
+                    <div class="col-md-4 ">
                         <div class="feature-card p-4 h-100">
                             <div class="feature-icon">
                                 <i class="fas fa-bible"></i>
@@ -167,8 +167,7 @@
                                 y práctica.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 ">
                         <div class="feature-card p-4 h-100">
                             <div class="feature-icon">
                                 <i class="fas fa-pray"></i>
@@ -177,8 +176,7 @@
                             <p>Mantenemos la comunicación constante con Dios como fundamento de todo lo que hacemos.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4">
                         <div class="feature-card p-4 h-100">
                             <div class="feature-icon">
                                 <i class="fas fa-hands-helping"></i>
@@ -188,110 +186,13 @@
                                 comunidad.</p>
                         </div>
                     </div>
-                </div>
+                </div> <!-- end row -->
             </div>
         </section>
 
-        <!-- Ministries Section -->
-        <section id="ministerios" class="section bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h2 class="section-title center">Nuestros Ministerios</h2>
-                        <p class="section-subtitle mx-auto">Conéctate con áreas de servicio según tu edad e intereses
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card p-4 h-100">
-                            <div class="feature-icon">
-                                <i class="fas fa-child"></i>
-                            </div>
-                            <h3 class="feature-title">Ministerio Infantil</h3>
-                            <p>Enseñamos a los niños sobre Jesús de manera creativa y divertida, con clases dominicales
-                                y actividades especiales.</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Saber más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card p-4 h-100">
-                            <div class="feature-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h3 class="feature-title">Juveniles</h3>
-                            <p>Un espacio donde los jóvenes crecen en su fe mientras se divierten, con estudios
-                                bíblicos, retiros y actividades sociales.</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Saber más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card p-4 h-100">
-                            <div class="feature-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <h3 class="feature-title">Ministerio de Mujeres</h3>
-                            <p>Reuniones, retiros y estudios bíblicos diseñados especialmente para el crecimiento
-                                espiritual de la mujer.</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Saber más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card p-4 h-100">
-                            <div class="feature-icon">
-                                <i class="fas fa-hands-praying"></i>
-                            </div>
-                            <h3 class="feature-title">Grupos de Oración</h3>
-                            <p>Reuniones dedicadas exclusivamente a orar por las necesidades de la iglesia y la
-                                comunidad.</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Saber más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card p-4 h-100">
-                            <div class="feature-icon">
-                                <i class="fas fa-music"></i>
-                            </div>
-                            <h3 class="feature-title">Alabanza y Adoración</h3>
-                            <p>Equipo musical que guía a la congregación en adoración genuina a través de la música.</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Saber más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card p-4 h-100">
-                            <div class="feature-icon">
-                                <i class="fas fa-hand-holding-heart"></i>
-                            </div>
-                            <h3 class="feature-title">Impacto Social</h3>
-                            <p>Servimos a la comunidad mediante programas de alimentación, consejería y ayuda a familias
-                                necesitadas.</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Saber más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Events Section -->
-        <section id="eventos" class="section">
+        <!-- <section id="eventos" class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -369,10 +270,10 @@
                     <a href="#" class="btn btn-primary">Ver todos los eventos</a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Pastors Section -->
-        <section class="section bg-light">
+        <section id="pastor" class="section bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -390,11 +291,11 @@
                             <p class="pastor-role">Pastor Principal</p>
                             <p>Con más de 10 años de ministerio, el Pastor Javier guía nuestra congregación con
                                 sabiduría y amor, enfatizando la enseñanza bíblica sólida.</p>
-                            <div class="social-links mt-3">
+                            <!-- <div class="social-links mt-3">
                                 <a href="#" aria-label="Facebook del Pastor Juan"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" aria-label="Twitter del Pastor Juan"><i class="fab fa-twitter"></i></a>
                                 <a href="#" aria-label="Instagram del Pastor Juan"><i class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -406,13 +307,13 @@
                             <p class="pastor-role">Pastora Asociada</p>
                             <p>La Pastora Patricia lidera nuestro ministerio de mujeres y programas de consejería
                                 familiar con compasión y sabiduría práctica.</p>
-                            <div class="social-links mt-3">
+                            <!-- <div class="social-links mt-3">
                                 <a href="#" aria-label="Facebook de la Pastora María"><i
                                         class="fab fa-facebook-f"></i></a>
                                 <a href="#" aria-label="Twitter de la Pastora María"><i class="fab fa-twitter"></i></a>
                                 <a href="#" aria-label="Instagram de la Pastora María"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -424,7 +325,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
-                        <h2 class="section-title center">Contáctanos</h2>
+                        <h2 class="section-title center">Información</h2>
                         <p class="section-subtitle mx-auto">Estamos aquí para servirte y responder tus preguntas</p>
                     </div>
                 </div>
@@ -439,7 +340,7 @@
                             </div>
                             <div>
                                 <h5>Dirección</h5>
-                                <p>Dollinco #650, Cerro San francisco<br>Talcahuano, Concepción</p>
+                                <p>Dollinco #650, Cerro San francisco<br>Talcahuano.</p>
                             </div>
                         </div>
 
@@ -473,7 +374,7 @@
                             </div>
                         </div>
 
-                        <div class="social-links mt-4">
+                        <!-- <div class="social-links mt-4">
                             <h5>Síguenos</h5>
                             <a href="#" aria-label="Facebook del Templo Luz y Vida"><i
                                     class="fab fa-facebook-f"></i></a>
@@ -481,16 +382,15 @@
                             <a href="#" aria-label="Instagram del Templo Luz y Vida"><i
                                     class="fab fa-instagram"></i></a>
                             <a href="#" aria-label="WhatsApp del Templo Luz y Vida"><i class="fab fa-whatsapp"></i></a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="col-lg-7">
                         <div class="map-container mb-4 ratio ratio-16x9">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!4v1755043559624!6m8!1m7!1syO6U_izQwIDJeCGeALxsFw!2m2!1d-36.71900993701173!2d-73.12864051134284!3f255.3040699669016!4f-5.531789777858805!5f0.8117306309335043"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.147636109555!2d-73.13140202333453!3d-36.71901537227052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966835a9891195a1%3A0x8d4d4100bdb09ff8!2sDollinco%20650%2C%204260955%20Talcahuano%2C%20B%C3%ADo%20B%C3%ADo!5e0!3m2!1ses-419!2scl!4v1755057942782!5m2!1ses-419!2scl"
                                 style="border:0;" allowfullscreen loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
 
@@ -536,15 +436,15 @@
                     <h3 class="footer-title">Templo Gloria Revelada</h3>
                     <p>Una comunidad cristiana comprometida con predicar el evangelio, discipular creyentes y servir a
                         la comunidad con amor.</p>
-                    <div class="social-links mt-3">
+                    <!-- <div class="social-links mt-3">
                         <a href="#" aria-label="Facebook del Templo"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="YouTube del Templo"><i class="fab fa-youtube"></i></a>
                         <a href="#" aria-label="Instagram del Templo"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="WhatsApp del Templo"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="col-lg-2 col-md-4">
+                <!-- <div class="col-lg-2 col-md-4">
                     <h3 class="footer-title">Enlaces</h3>
                     <ul class="footer-links">
                         <li><a href="#">Inicio</a></li>
@@ -573,7 +473,7 @@
                         <li><i class="fas fa-phone me-2"></i> +52 55 1234 5678</li>
                         <li><i class="fas fa-envelope me-2"></i> contacto@templogloriarevelada.com</li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
             <div class="copyright">
@@ -582,7 +482,7 @@
                         <p>&copy; 2025 Templo Gloria Revelada. Todos los derechos reservados.</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <p class="mb-0">Diseñado con <i class="fas fa-heart text-danger"></i></p>
+                        <p class="mb-0">Diseñado por crisnavv</p>
                     </div>
                 </div>
             </div>
